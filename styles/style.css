@@ -1,1 +1,391 @@
 /* место для вашего кода */
+body {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    font: inherit;
+}
+
+
+.topbar {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 0 96px;
+}
+
+.topbar__nav {
+    justify-self: start;
+}
+
+.nav-list {
+  display: flex;
+  gap: 32px;
+  list-style: circle;
+  padding-left: 20px;
+  font-weight: 300;
+}
+
+.nav-list__item--current {
+    list-style: none;
+}
+
+.nav-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+.nav-list__item--current .nav-link {
+    text-decoration: none;
+}
+
+.topbar__brand {
+  display: block;
+  width: 148px;
+}
+
+.topbar__brand img {
+  width: 100%;
+  display: block;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+.topbar__contacts {
+  justify-self: end;
+  max-width: 240px;
+}
+
+.contacts__link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+.contacts__text {
+    margin: 0;
+}
+
+.cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 757px;
+  box-sizing: border-box;
+  padding: 165px 50px 50px;
+  margin-bottom: 180px;
+  background-image: url('../images/cover.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.cover__shade {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+
+.cover__heading {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+}
+
+.cover__word {
+    display: block;
+}
+
+.cover__word--middle {
+    text-align: center;
+}
+
+.cover__word--end {
+    text-align: right;
+}
+
+.cover__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cover__subtitle {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  word-spacing: 18px;
+  font-weight: 300;
+}
+
+.cta-button {
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding: 12px 32px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 300;
+}
+
+.catalog {
+  margin-bottom: 180px;
+  padding: 0 24px;
+}
+
+.catalog__title {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 27px;
+}
+
+.catalog__grid {
+  list-style: none;
+  margin: 0 0 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.catalog__cell {
+  width: 334px;
+  min-height: 596px;
+  flex-grow: 1;
+}
+
+.tile-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.tile {
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.tile--film {
+    background-image: url('../images/card-lot-01.jpg');
+}
+
+.tile--book {
+    background-image: url('../images/card-lot-02.jpg');
+}
+
+.tile--art  {
+    background-image: url('../images/card-lot-03.jpg');
+}
+
+.tile__shade {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+
+.tile__name {
+  position: relative;
+  z-index: 2;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.2;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+.tile__desc {
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+.catalog__more {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 300;
+  color: inherit;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
+}
+
+.story {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  gap: 72px;
+  margin-bottom: 180px;
+  padding: 0 24px;
+}
+
+.story__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.story__badge {
+  width: 240px;
+  height: 240px;
+  margin-top: 15px;
+  border-radius: 50%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.story__badge-img {
+  width: 148px;
+  height: auto;
+  display: block;
+}
+
+.story__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.story__title {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+
+.story__body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.story__body p {
+    margin: 0;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  padding: 0 24px 90px;
+}
+
+.bottom__contacts {
+  justify-self: start;
+  max-width: 240px;
+  font-weight: 300;
+}
+
+.bottom__nav {
+    justify-self: center;
+}
+
+.bottom-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 300;
+}
+
+.bottom-nav__link {
+  color: inherit;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+.bottom-nav__link--current {
+    text-decoration: none;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.socials__link {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.socials__icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
