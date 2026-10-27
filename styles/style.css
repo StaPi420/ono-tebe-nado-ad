@@ -53,7 +53,7 @@
     justify-self: end;
 }
 
-.hero {
+.cover {
     background-image: url("../images/cover.jpg");
     background-position: 50% 50%;
     background-size: cover;
@@ -62,7 +62,7 @@
     z-index: -2;
 }
 
-.hero__shade,
+.cover__shade,
 .lot-tile__shade {
     background-color: black;
     bottom: 0;
@@ -74,14 +74,14 @@
     z-index: -1;
 }
 
-.hero__heading {
+.cover__heading {
     display: flex;
     flex-direction: column;
     justify-content: center;
     line-height: 1.286;
 }
 
-.hero__line {
+.cover__line {
     color: white;
     font-size: 100px;
     font-weight: 700;
@@ -89,31 +89,31 @@
     text-transform: uppercase;
 }
 
-.hero__line--left {
+.cover__line--left {
     display: flex;
     justify-content: flex-start;
 }
 
-.hero__line--middle {
+.cover__line--middle {
     display: flex;
     justify-content: center;
     margin-right: -0.3em;
 }
 
-.hero__line--right {
+.cover__line--right {
     display: flex;
     justify-content: end;
     margin-right: -0.3em;
 }
 
-.hero__bottom {
+.cover__bottom {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 106px;
 }
 
-.hero__slogan {
+.cover__slogan {
     align-items: center;
     color: white;
     display: flex;
