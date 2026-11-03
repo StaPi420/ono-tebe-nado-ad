@@ -6,12 +6,10 @@
 }
 
 .nav-menu__list {
-    align-items: center;
     display: flex;
     flex-direction: row;
     font-size: 18px;
     gap: 26px;
-    justify-content: start;
     margin: 0;
     padding: 0;
 }
@@ -26,9 +24,7 @@
 }
 
 .brand-logo {
-    align-items: center;
     height: 105px;
-    justify-content: center;
     width: 148px;
 }
 
@@ -218,7 +214,7 @@
 
 .about__wrap {
     display: grid;
-    grid-gap: 72px;
+    gap: 72px;
     grid-template-columns: 240px 693px;
     justify-content: center;
 }
@@ -226,7 +222,7 @@
 .about__badge {
     align-items: center;
     background-color: black;
-    border-radius: 100rcap;
+    border-radius: 50%;
     display: flex;
     height: 240px;
     justify-content: center;
@@ -258,10 +254,6 @@
     margin-top: 100px;
 }
 
-.about__lead {
-    width: 688px;
-}
-
 .page-footer {
     display: grid;
     grid-template-columns: 1fr 164px 1fr;
@@ -290,7 +282,7 @@
 }
 
 .footer-nav__link--current {
-    text-underline-offset: 0.25em;
+    text-decoration: none;
 }
 
 .socials {
